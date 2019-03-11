@@ -30,7 +30,7 @@ build/openlibm/libopenlibm.a: build/openlibm/Makefile
 
 build/ocaml/Makefile:
 	mkdir -p build
-	cp -r `ocamlfind query ocaml-src` build/ocaml
+	cp -r `ocamlfind query ocaml-src-statmemprof` build/ocaml
 
 build/ocaml/config/Makefile: build/ocaml/Makefile
 ifeq ($(OCAML_GTE_4_06_0),yes)

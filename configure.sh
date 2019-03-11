@@ -19,7 +19,7 @@ if [ -z "${PKG_CONFIG_DEPS}" ]; then
     echo "ERROR: solo5-bindings-hvt, solo5-bindings-virtio, solo5-bindings-muen, or solo5-bindings-genode must be installed." 1>&2
     exit 1
 fi
-ocamlfind query ocaml-src >/dev/null || exit 1
+ocamlfind query ocaml-src-statmemprof >/dev/null || exit 1
 
 FREESTANDING_CFLAGS="$(pkg-config --cflags ${PKG_CONFIG_DEPS})"
 BUILD_ARCH=$(uname -m)

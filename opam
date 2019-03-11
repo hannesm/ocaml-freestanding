@@ -12,7 +12,7 @@ remove: [make "uninstall" "PREFIX=%{prefix}%"]
 depends: [
   "conf-pkg-config"
   "ocamlfind" {build}
-  "ocaml-src" {build}
+  "ocaml-src-statmemprof" {build}
   ("solo5-bindings-hvt" | "solo5-bindings-virtio" | "solo5-bindings-muen" | "solo5-bindings-genode")
   "ocaml" {>= "4.04.2" & < "4.08.0"}
 ]
