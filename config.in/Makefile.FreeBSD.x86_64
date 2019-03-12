@@ -86,3 +86,4 @@ TARGET=x86_64-unknown-freebsd11.0
 HOST=x86_64-unknown-freebsd11.0
 FLAMBDA=false
 MAX_TESTSUITE_DIR_RETRIES=0
+WITH_STATMEMPROF=true
