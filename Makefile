@@ -20,6 +20,9 @@ openlibm/libopenlibm.a:
 
 ocaml/Makefile:
 	cp -r `ocamlfind query ocaml-src` ./ocaml
+	sed -e 's/ac_cv_lib_m_cos=yes/ac_cv_lib_m_cos=no/' ocaml/configure > ocaml/configure.new
+	mv ocaml/configure.new ocaml/configure
+	chmod +x ocaml/configure
 
 # OCaml >= 4.08.0 uses an autotools-based build system. In this case we
 # convince it to think it's using the Solo5 compiler as a cross compiler, and
