@@ -39,8 +39,6 @@ main() {
   walk_tree openlibm/include include
   walk_tree openlibm/src include .h
   install_file openlibm/libopenlibm.a lib/libopenlibm.a
-  # dummy package
-  install_file _build/empty-META lib/threads/META
   printf ']\n'
 }
 
